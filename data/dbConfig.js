@@ -6,4 +6,3 @@ const environment = process.env.DB_ENV || "development";
 // go to heroku & settings for this
 
 module.exports = knex(config[environment]);
-D;
