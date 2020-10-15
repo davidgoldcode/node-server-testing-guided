@@ -18,3 +18,9 @@ Please follow along as the instructor adds automated tests to the API.
 - inspect to see if is what I expected
 
 Jest will default to running the code in an environment similar to a web browser. For testing node servers, we need to change that option.
+
+```json
+    "jest": {
+        "testEnvironment": "node"
+    }
+```

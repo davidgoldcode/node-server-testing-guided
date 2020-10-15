@@ -1,4 +1,5 @@
-const pgConnection = process.env.DATABASE_URL || "postgresql://postgres@localhost/hobbits";
+const pgConnection =
+  process.env.DATABASE_URL || "postgresql://postgres@localhost/hobbits";
 
 module.exports = {
   development: {
@@ -28,6 +29,7 @@ module.exports = {
     },
   },
 
+  // we will use this configuration for Heroku
   production: {
     client: "pg",
     connection: pgConnection,
