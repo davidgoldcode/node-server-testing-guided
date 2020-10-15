@@ -10,12 +10,16 @@ server.get("/", (req, res) => {
   res.status(200).json({ api: "up" });
 });
 
+// return http 200
+// return json
+// the body has an api property & the value is "up"
+
 server.get("/hobbits", (req, res) => {
   Hobbits.getAll()
-    .then(hobbits => {
+    .then((hobbits) => {
       res.status(200).json(hobbits);
     })
-    .catch(error => {
+    .catch((error) => {
       res.status(500).json(error);
     });
 });
